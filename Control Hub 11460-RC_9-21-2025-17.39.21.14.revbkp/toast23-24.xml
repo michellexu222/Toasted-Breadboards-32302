@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Robot type="FirstInspires-FTC">
+    <LynxUsbDevice name="Control Hub Portal" serialNumber="(embedded)" parentModuleAddress="173">
+        <LynxModule name="Expansion Hub 2" port="2">
+            <RevRoboticsCoreHexMotor name="Lift1" port="0" />
+            <RevRoboticsCoreHexMotor name="Lift2" port="1" />
+            <RevRoboticsCoreHexMotor name="String1" port="2" />
+            <RevRoboticsCoreHexMotor name="String2" port="3" />
+            <Servo name="pixel" port="0" />
+            <Servo name="pixelB" port="1" />
+            <Servo name="pixelA" port="5" />
+            <LynxEmbeddedIMU name="imu" port="0" bus="0" />
+            <REV_VL53L0X_RANGE_SENSOR name="rightDistance" port="0" bus="2" />
+            <REV_VL53L0X_RANGE_SENSOR name="leftDistance" port="0" bus="1" />
+        </LynxModule>
+        <LynxModule name="Control Hub" port="173">
+            <RevRoboticsUltraplanetaryHDHexMotor name="backL" port="0" />
+            <RevRoboticsUltraplanetaryHDHexMotor name="frontL" port="1" />
+            <RevRoboticsUltraplanetaryHDHexMotor name="backR" port="2" />
+            <RevRoboticsUltraplanetaryHDHexMotor name="frontR" port="3" />
+            <Servo name="Claw" port="1" />
+            <Servo name="Wrist" port="2" />
+            <Servo name="drone" port="3" />
+            <Servo name="hook" port="4" />
+            <OpticalDistanceSensor name="rDistance" port="0" />
+            <OpticalDistanceSensor name="bDistance" port="1" />
+            <RevColorSensorV3 name="colorSensor" port="0" bus="0" />
+        </LynxModule>
+    </LynxUsbDevice>
+    <Webcam name="Front Webcam" serialNumber="DD194BA0" />
+</Robot>
